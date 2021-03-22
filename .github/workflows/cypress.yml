@@ -2,7 +2,13 @@ name: End-to-end tests
 on: [push]
 jobs:
   cypress-run:
-    runs-on: cypress/base
+    runs-on: ubuntu-latest
     steps:
-      - run: npm install
-      - run: npm test
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          browser: chrome
+          headless: true
+          spec: cypress/integration/tickets.spec.js
+          record: true
+          tag: node-${{ matrix.node }}
