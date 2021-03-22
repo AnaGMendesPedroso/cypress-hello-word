@@ -1,0 +1,1 @@
+[![E2E Action Status](https://github.com/AnaGMendesPedroso/cypress-hello-word/workflows/End-to-end_tests/badge.svg)](https://github.com/AnaGMendesPedroso/cypress-hello-word/actions)
